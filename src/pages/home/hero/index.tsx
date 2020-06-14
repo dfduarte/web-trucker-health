@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 
-import backgroundImage from '../../../assets/background-home.png';
+import backgroundImage from '../../../assets/Imagem-home.webp';
 import { Menu } from '../menu';
 import { Grid, Text, Box, Button, Stack } from '../../../design-system';
 import screenHomeAppSrc from '../../../assets/screen-home-app.png';
