@@ -50,6 +50,11 @@ Instale as dependências de desenvolvimento do projeto, abra o terminal na pasta
 yarn install
 ```
 
+Para acessar a documentação do design system, rode:
+```
+yarn storybook
+```
+
 Para subir a aplicação na máquina, execute o comando e abra o [http://localhost:3000](http://localhost:3000) no navegador
 ```
 yarn start
