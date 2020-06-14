@@ -23,19 +23,19 @@ O app terá acesso a vários recursos de saude e bem estar no app, como acesso a
 
 #### Protótipo navegável
 
-[Clique aqui para ver o protótipo no figma](https://bit.ly/3gjpTHp)
+[Clique aqui para ver o protótipo no figma](<AGUARDANDO>)
 
 #### Aplicação desenvolvida
 
-[Clique aqui para acessar a aplicação em produção](https://casa-ile.netlify.app/)
+[Clique aqui para acessar a aplicação em produção](https://trucker-health.netlify.app/)
+
+#### Backend
+
+[Clique aqui para acessar o repositorio e a documentação dos APIs](https://github.com/dfduarte/api-trucker-health)
 
 #### Pitch
 
-[Clique aqui para assistir o pitch](https://youtu.be/SOsaZuPez4Y)
-
-#### Documentação das APIs
-
-[Clique aqui para acessar o Swagger](https://app.swaggerhub.com/apis/GabrieleSuzart/ile-serverless_workstations/1#/default/post_users)
+[Clique aqui para assistir o pitch](https://youtu.be/EbE68I6-vdg)
 
 
 #### Como rodar o projeto
@@ -59,5 +59,3 @@ Para executar os testes unitários, rode:
 ```
 yarn test
 ```
-
-Para o funcionando das APIs na máquina local, crie um arquivo `.env` na raiz do projeto e crie uma variável de ambiente `REACT_APP_URL=` e ao lado coloque a URL da API, vide swagger.
