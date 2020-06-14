@@ -50,7 +50,7 @@ Instale as dependências de desenvolvimento do projeto, abra o terminal na pasta
 yarn install
 ```
 
-Para acessar a documentação do design system, rode:
+Para acessar a documentação do design system via http://localhost:9009, rode:
 ```
 yarn storybook
 ```
