@@ -4,7 +4,7 @@
   "private": true,
   "description": "Qualidade de vida para o caminhoneiro",
   "repository": "https://github.com/GabrieleSuzart/web-trucker-health",
-  "homepage": "http://gabrielesuzart.github.io/web-trucker-health",
+  "homepage": "https://GabrieleSuzart.github.io/web-trucker-health",
   "author": "Trucker Health LTDA",
   "license": "MIT",
   "dependencies": {
@@ -15,6 +15,7 @@
     "axios": "^0.19.2",
     "csstype": "^2.6.10",
     "filesize": "^6.1.0",
+    "gh-pages": "^3.0.0",
     "history": "^4.10.1",
     "polished": "^3.6.4",
     "react": "^16.13.1",
@@ -36,7 +37,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "predeploy": "react-app-rewired build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "browserslist": {
@@ -81,7 +82,6 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
-    "gh-pages": "^3.0.0",
     "prettier": "^2.0.4",
     "react-app-rewired": "^2.1.5",
     "ts-jest": "^25.4.0"
