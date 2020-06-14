@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 
-import { theme, TextSizeProps } from '../../theme';
+import { theme, TextSizeProps, ColorProps } from '../../theme';
 import { Text } from '../../index';
 
 export const Container = styled.div<{
@@ -15,7 +15,7 @@ export const Container = styled.div<{
 `;
 
 export const Logo: FC<{
-  color?: string;
+  color?: ColorProps;
   size?: number | string;
   textSize?: TextSizeProps | TextSizeProps[];
   labelPosition?: 'bottom' | 'right';
@@ -29,7 +29,7 @@ export const Logo: FC<{
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 300 300"
       >
-        <g fill={color} fillRule="evenodd">
+        <g fill={theme.colors[color!]} fillRule="evenodd">
           <path
             className="cls-1"
             d="M49.15,163.6a100.52,100.52,0,0,0,13.16,38.54c14.4,24.18,38.34,41.39,65.17,46.88A84.89,84.89,0,0,0,148.11,251c12,0,20.48-1.29,31.15-4.83a97.34,97.34,0,0,0,35.9-21q1.82-1.68,3.52-3.42L202.91,206A79.24,79.24,0,0,1,190,216.55a94.31,94.31,0,0,1-17.33,8.33c-4.44,1.44-12,3.19-12.34,2.8-.19-.19,2.49-45.12,2.84-46.79.08-.51,1.09-1.41,2.57-2.3a32.25,32.25,0,0,0,5.34-4.48l-15.71-15.72a9.85,9.85,0,0,1-9.29,2.87,10,10,0,0,1-6.34-15.1,8.52,8.52,0,0,1,3.93-3.55,9.89,9.89,0,0,1,11.42,1.79l15.7-15.7a28,28,0,0,0-8.82-6.21c-5-2.38-8-3-13.83-3s-8.83.66-13.82,3c-5.95,2.8-9.38,6-14.67,13.58-.43.63-3.43,1-24.22,3-13,1.29-23.79,2.26-23.87,2.18s1.29-7.47,2.18-10.67a78.38,78.38,0,0,1,32.55-44,80.21,80.21,0,0,1,32.12-11.68,76,76,0,0,1,43.41,7.2,71.46,71.46,0,0,1,20.83,14.77L218.44,81a101.94,101.94,0,0,0-19.71-15.3,99.72,99.72,0,0,0-38.55-13.08c-2-.2-4.32-.47-5.06-.55a177.49,177.49,0,0,0-19.46.55,100,100,0,0,0-86.51,86.82A154.4,154.4,0,0,0,49.15,163.6Zm22.34-2.1c.2-.16,47.07,3.58,47.19,3.73s.94,1.52,2,3.24a34.73,34.73,0,0,0,9.85,10.08c1.48.93,2.49,1.83,2.57,2.34.35,1.67,3,46.6,2.84,46.79-.35.39-7.9-1.36-12.34-2.8a94.31,94.31,0,0,1-17.33-8.33A78.4,78.4,0,0,1,71.8,164.22,15.21,15.21,0,0,1,71.49,161.5Z"
@@ -41,7 +41,7 @@ export const Logo: FC<{
         </g>
       </svg>
       {labelPosition && (
-        <Text as="h1" color="cereja" textSize={textSize}>
+        <Text as="span" color={color} textSize={textSize} isBold>
           Trucker Health
         </Text>
       )}
@@ -52,5 +52,5 @@ export const Logo: FC<{
 Logo.defaultProps = {
   size: theme.fontSizes.x6,
   textSize: 'x2',
-  color: theme.colors.cereja,
+  color: 'cereja',
 };
