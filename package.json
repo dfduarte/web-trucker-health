@@ -4,7 +4,6 @@
   "private": true,
   "description": "Qualidade de vida para o caminhoneiro",
   "repository": "https://github.com/GabrieleSuzart/web-trucker-health",
-  "homepage": "http://gabrielesuzart.github.io/web-trucker-health",
   "author": "Trucker Health LTDA",
   "license": "MIT",
   "dependencies": {
@@ -31,13 +30,13 @@
   },
   "scripts": {
     "dev": "react-app-rewired start",
+    "start": "react-app-rewired start",
+    "stop": "react-app-rewired stop",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "predeploy": "react-app-rewired build",
-    "deploy": "gh-pages -d build"
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
