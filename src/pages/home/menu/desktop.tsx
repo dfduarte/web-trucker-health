@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-// import { useHistory } from 'react-router-dom';
 import { Logo, Grid, Stack, Text } from '../../../design-system';
 import { MENU_OPTIONS } from './options';
 
@@ -10,9 +9,13 @@ export const Nav = styled.nav`
   align-items: center;
 `;
 
+export const Container = styled(Grid)`
+  padding-top: ${({ theme }) => theme.space.x2};
+`;
+
 export const DesktopMenu: FC = () => {
   return (
-    <Grid gridTemplateColumns="repeat(12, 1fr)">
+    <Container gridTemplateColumns="repeat(12, 1fr)">
       <Grid gridColumn="2 / 6">
         <Stack layout="horizontal">
           <Logo color="dawnPink" labelPosition="right" />
@@ -45,6 +48,6 @@ export const DesktopMenu: FC = () => {
           </Stack>
         </Nav>
       </Grid>
-    </Grid>
+    </Container>
   );
 };

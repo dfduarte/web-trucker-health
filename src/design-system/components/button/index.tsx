@@ -1,27 +1,55 @@
-import React, { FC, ButtonHTMLAttributes } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { shade } from 'polished';
+import { ColorProps } from '../../theme';
+import { HtmlAttrs } from '../../baseProps';
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+export type ButtonProps = {
+  color?: ColorProps;
+  isOutlined?: boolean;
+  type?: 'button' | 'reset' | 'submit';
+  htmlAttrs?: HtmlAttrs;
+  ariaLabel?: string;
+  role?: string;
+  onClick?: () => void;
+};
 
-const Component = styled.button`
-  background: ${({ theme }) => theme.colors.cereja};
+const Component = styled.button<{ isOutlined?: boolean; color?: ColorProps }>`
   height: 56px;
   border-radius: 10px;
-  border: 0;
-  color: ${({ theme }) => theme.colors.dawnPink};
   padding: 0 ${({ theme }) => theme.space.x2};
-  width: 100%;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   transition: background-color 0.2s;
 
+  background: ${({ theme, isOutlined, color }) =>
+    isOutlined ? theme.colors.dawnPink : theme.colors[color!]};
+  color: ${({ theme, isOutlined }) =>
+    isOutlined ? theme.colors.cereja : theme.colors.dawnPink};
+  border: ${({ theme, isOutlined }) =>
+    isOutlined ? `1px solid ${theme.colors.cereja}` : 0};
+
+  ${({ theme }) => theme.media.below('md')} {
+    width: 100%;
+  }
+
   &:hover {
-    background: ${({ theme }) => shade(0.2, theme.colors.cereja)};
+    background: ${({ theme, isOutlined, color }) =>
+      isOutlined ? theme.colors.cereja : shade(0.2, theme.colors[color!])};
+    color: ${({ theme, isOutlined }) => isOutlined && theme.colors.dawnPink};
   }
 `;
 
-export const Button: FC<ButtonProps> = ({ children, ...rest }) => (
-  <Component type="button" {...rest}>
+export const Button: FC<ButtonProps> = ({
+  isOutlined,
+  children,
+  color,
+  ...rest
+}) => (
+  <Component type="button" isOutlined={isOutlined} color={color} {...rest}>
     {children}
   </Component>
 );
+
+Button.defaultProps = {
+  color: 'cereja',
+};
