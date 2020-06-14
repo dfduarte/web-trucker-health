@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { Logo, Grid, Stack, Text } from '../../../design-system';
+import { useHistory } from 'react-router-dom';
+import { Logo, Grid, Stack, Text, Button } from '../../../design-system';
 import { MENU_OPTIONS } from './options';
 
 export const Nav = styled.nav`
@@ -13,7 +14,12 @@ export const Container = styled(Grid)`
   padding-top: ${({ theme }) => theme.space.x2};
 `;
 
+export const LoginButton = styled(Button)`
+  height: 30px;
+`;
+
 export const DesktopMenu: FC = () => {
+  const history = useHistory();
   return (
     <Container gridTemplateColumns="repeat(12, 1fr)">
       <Grid gridColumn="2 / 6">
@@ -45,6 +51,9 @@ export const DesktopMenu: FC = () => {
                 </Text>
               </li>
             ))}
+            <LoginButton onClick={() => history.push('/login')}>
+              Login
+            </LoginButton>
           </Stack>
         </Nav>
       </Grid>

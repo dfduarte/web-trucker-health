@@ -4,11 +4,13 @@ import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
 
+import { useHistory } from 'react-router-dom';
 import { Container, Content, Background } from './styles';
-import { Stack, Text, Input, Button, Logo } from '../../design-system';
+import { Stack, Text, Input, Button, Logo, Box } from '../../design-system';
 import { getValidationErrors } from '../../utils/get-validation-erros';
 
 export const SignIn: FC = () => {
+  const history = useHistory();
   const formRef = useRef<FormHandles>(null);
 
   const handleSubmit = useCallback(async (data: object) => {
@@ -35,7 +37,12 @@ export const SignIn: FC = () => {
   return (
     <Container>
       <Content>
-        <Logo labelPosition="bottom" size={120} textSize="x3" />
+        <Box
+          onClick={() => history.push('/')}
+          htmlAttrs={{ style: { cursor: 'pointer' } }}
+        >
+          <Logo labelPosition="bottom" size={120} textSize="x3" />
+        </Box>
         <Form ref={formRef} onSubmit={handleSubmit}>
           <Stack margin="x3">
             <Text as="h1" textSize="x4" textAlign="center">
