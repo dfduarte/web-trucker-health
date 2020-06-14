@@ -28,6 +28,12 @@ const ImageHero = styled.img`
   margin-top: ${({ theme }) => theme.space.x2};
 `;
 
+const ContainerButton = styled.div`
+  ${({ theme }) => theme.media.above('md')} {
+    width: 300px;
+  }
+`;
+
 export const Hero: FC = () => {
   const history = useHistory();
   return (
@@ -44,9 +50,11 @@ export const Hero: FC = () => {
               <Text as="h1" color="dawnPink" textSize={['x3', 'x6']} isBold>
                 Uma plataforma para cuidar da saúde dos caminhoneiros
               </Text>
-              <Button onClick={() => history.push('/')} isOutlined>
-                Ver Demonstração
-              </Button>
+              <ContainerButton>
+                <Button onClick={() => history.push('/')} isOutlined>
+                  Ver Demonstração
+                </Button>
+              </ContainerButton>
             </Stack>
           </Box>
         </Grid>

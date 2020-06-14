@@ -12,18 +12,23 @@ const Container = styled.section`
 `;
 
 const SleepImage = styled(Grid)`
+  display: flex;
+  justify-content: center;
   align-self: flex-start;
+  margin: ${({ theme }) => theme.space.x2} 0;
 
   img {
-    max-height: 70vh;
+    max-height: 80vh;
   }
 `;
 
 const FitImage = styled(Grid)`
+  display: flex;
+  justify-content: center;
   align-self: flex-end;
 
   img {
-    max-height: 70vh;
+    max-height: 80vh;
   }
 `;
 
