@@ -1,45 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Trucker Health - 2020
+### Pao de Queijo e Acarajé / Hackaton CCR
 
-## Available Scripts
+#### Quem somos
 
-In the project directory, you can run:
+Somos a equipe do Trucker Health, que é a junção de developers do estado de Minas Gerais e Bahia. Os Membros são: Marilia Suzart, Diego Duarte, Marcos Lacerda e Marlon Evangelista
 
-### `yarn start`
+#### Tech team:
+[![TruckerHealthFront](https://avatars1.githubusercontent.com/u/30198542?s=120&v=4)](https://github.com/gabrielesuzart)
+[![TruckerHealthBack](https://avatars1.githubusercontent.com/u/58738015?s=120&v=4)](https://github.com/dfduarte)
+[![TruckerHealthBack](https://avatars1.githubusercontent.com/u/4759987?s=120&v=4)](https://github.com/maclacerda)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Graphic design team:
+* Marlon Evangelista
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Apresentação 
 
-### `yarn test`
+Com base em pesquisas realizadas pelo time, percebemos que os caminhoneiros possuem uma grande carga de trabalho combinada com habitos, em geral, ruins de alimentação e bem estar. Pensando nesse problema surgiu o Trucker Health, que auxilia o caminhoneiro a evitar diversas doenças, especialmente as DCNT (Doenças Cronicas não Transmissiveis).
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### O Produto
 
-### `yarn build`
+O app terá acesso a vários recursos de saude e bem estar no app, como acesso a campanhas de vacinação, Maio Amarelo, bem-estar e saúde e interligar esses dados de saúde ao departamento de recursos humanos da frota desse funcionário, auxiliando-os a trazer melhor bem-estar e uma vida melhor a esses que trabalham tão duro nas estradas.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Protótipo navegável
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[Clique aqui para ver o protótipo no figma](<AGUARDANDO>)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Aplicação desenvolvida
 
-### `yarn eject`
+[Clique aqui para acessar a aplicação em produção](https://trucker-health.netlify.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Backend
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Clique aqui para acessar o repositorio e a documentação dos APIs](https://github.com/dfduarte/api-trucker-health)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Pitch
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Clique aqui para assistir o pitch](https://youtu.be/EbE68I6-vdg)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Como rodar o projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Faça o clone do repositório para sua máquina local
+```
+git clone git@github.com:GabrieleSuzart/web-trucker-health.git
+```
 
+Instale as dependências de desenvolvimento do projeto, abra o terminal na pasta raiz e execute o comando:
+```
+yarn install
+```
+
+Para acessar a documentação do design system via http://localhost:9009, rode:
+```
+yarn storybook
+```
+
+Para subir a aplicação na máquina, execute o comando e abra o [http://localhost:3000](http://localhost:3000) no navegador
+```
+yarn start
+```
+
+Para executar os testes unitários, rode:
+```
+yarn test
+```
