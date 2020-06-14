@@ -3,6 +3,7 @@ import { Hero } from './hero';
 import { Vision } from './vision';
 import { Benefits } from './benefits';
 import { KnowMore } from './know-more';
+import { HowWork } from './how-work';
 
 export const Home: FC = () => {
   return (
@@ -11,6 +12,7 @@ export const Home: FC = () => {
       <Vision />
       <Benefits />
       <KnowMore />
+      <HowWork />
     </>
   );
 };
