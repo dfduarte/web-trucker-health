@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.js": "/web-trucker-health/static/js/main.63472189.chunk.js",
-    "main.js.map": "/web-trucker-health/static/js/main.63472189.chunk.js.map",
-    "runtime-main.js": "/web-trucker-health/static/js/runtime-main.2e7ca00d.js",
-    "runtime-main.js.map": "/web-trucker-health/static/js/runtime-main.2e7ca00d.js.map",
-    "static/js/2.bfd96a27.chunk.js": "/web-trucker-health/static/js/2.bfd96a27.chunk.js",
-    "static/js/2.bfd96a27.chunk.js.map": "/web-trucker-health/static/js/2.bfd96a27.chunk.js.map",
-    "index.html": "/web-trucker-health/index.html",
-    "precache-manifest.68d99038358eaa3a158fb1053996cc0c.js": "/web-trucker-health/precache-manifest.68d99038358eaa3a158fb1053996cc0c.js",
-    "service-worker.js": "/web-trucker-health/service-worker.js",
-    "static/js/2.bfd96a27.chunk.js.LICENSE.txt": "/web-trucker-health/static/js/2.bfd96a27.chunk.js.LICENSE.txt",
-    "static/media/background-home.png": "/web-trucker-health/static/media/background-home.75a0fced.png",
-    "static/media/screen-fit-app.png": "/web-trucker-health/static/media/screen-fit-app.e5c37011.png",
-    "static/media/screen-home-app.png": "/web-trucker-health/static/media/screen-home-app.45e3f8c6.png",
-    "static/media/screen-sleep-app.png": "/web-trucker-health/static/media/screen-sleep-app.82254a07.png",
-    "static/media/sign-in-background.jpg": "/web-trucker-health/static/media/sign-in-background.13ea2f15.jpg",
-    "static/media/sign-up-background.jpeg": "/web-trucker-health/static/media/sign-up-background.88e6e34d.jpeg"
+    "main.js": "/static/js/main.63472189.chunk.js",
+    "main.js.map": "/static/js/main.63472189.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3c2b7dbf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3c2b7dbf.js.map",
+    "static/js/2.bd5ce963.chunk.js": "/static/js/2.bd5ce963.chunk.js",
+    "static/js/2.bd5ce963.chunk.js.map": "/static/js/2.bd5ce963.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.17d9ba0ca6fdfe2565e49729214be17a.js": "/precache-manifest.17d9ba0ca6fdfe2565e49729214be17a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.bd5ce963.chunk.js.LICENSE.txt": "/static/js/2.bd5ce963.chunk.js.LICENSE.txt",
+    "static/media/background-home.png": "/static/media/background-home.75a0fced.png",
+    "static/media/screen-fit-app.png": "/static/media/screen-fit-app.e5c37011.png",
+    "static/media/screen-home-app.png": "/static/media/screen-home-app.45e3f8c6.png",
+    "static/media/screen-sleep-app.png": "/static/media/screen-sleep-app.82254a07.png",
+    "static/media/sign-in-background.jpg": "/static/media/sign-in-background.13ea2f15.jpg",
+    "static/media/sign-up-background.jpeg": "/static/media/sign-up-background.88e6e34d.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2e7ca00d.js",
-    "static/js/2.bfd96a27.chunk.js",
+    "static/js/runtime-main.3c2b7dbf.js",
+    "static/js/2.bd5ce963.chunk.js",
     "static/js/main.63472189.chunk.js"
   ]
 }
