@@ -15,6 +15,7 @@ export type ButtonProps = {
 };
 
 const Component = styled.button<{ isOutlined?: boolean; color?: ColorProps }>`
+  width: 100%;
   height: 56px;
   border-radius: 10px;
   padding: 0 ${({ theme }) => theme.space.x2};
@@ -27,10 +28,6 @@ const Component = styled.button<{ isOutlined?: boolean; color?: ColorProps }>`
     isOutlined ? theme.colors.cereja : theme.colors.dawnPink};
   border: ${({ theme, isOutlined }) =>
     isOutlined ? `1px solid ${theme.colors.cereja}` : 0};
-
-  ${({ theme }) => theme.media.below('md')} {
-    width: 100%;
-  }
 
   &:hover {
     background: ${({ theme, isOutlined, color }) =>

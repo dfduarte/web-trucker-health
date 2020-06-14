@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Hero } from './hero';
 import { Vision } from './vision';
 import { Benefits } from './benefits';
+import { KnowMore } from './know-more';
 
 export const Home: FC = () => {
   return (
@@ -9,6 +10,7 @@ export const Home: FC = () => {
       <Hero />
       <Vision />
       <Benefits />
+      <KnowMore />
     </>
   );
 };
