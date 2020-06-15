@@ -50,19 +50,13 @@ export const KnowMore: FC = () => {
               <strong>Trucker Health</strong>
             </Text>
             <Text color="lightDark">
-              Lorem Ipsum has been the industrys standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              Cálculo automático dos intervalos para descanso.
             </Text>
             <Text color="lightDark">
-              Lorem Ipsum has been the industrys standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              Nosso aplicativo calcula e mostra a hora exata de descanso para o motorista.
             </Text>
             <Text color="lightDark">
-              Lorem Ipsum has been the industrys standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              Como a atencao e essencial para o motorista nosso aplicativo emite um alerta sonoro para cada alarme: Descanso; Aproximando de um posto; batimentos cardiacos alterados.
             </Text>
           </Stack>
         </Grid>
