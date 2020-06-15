@@ -17,19 +17,19 @@ const Container = styled.section`
 
 const BENEFITS_DATA = [
   {
-    title: 'Vantagem 1',
+    title: 'Horas Dirigidas',
     description:
-      'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took.',
+      'A empresa determina a qunaitdade de horas dirigidas e a plataforma calcula os intervalos de descanso.',
   },
   {
-    title: 'Vantagem 2',
+    title: 'Relatorios',
     description:
-      'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took.',
+      'Relatórios dos funcionários e suas horas dirigidas, para conseguir acompanhar melhor como anda as horas de descanso.',
   },
   {
-    title: 'Vantagem 3',
+    title: 'SOS',
     description:
-      'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took.',
+      'Caso o motorista precise de alguma ajuda urgente nosso aplicativo envia uma mensagem para as autoridades locais e para a empresa.',
   },
 ];
 
