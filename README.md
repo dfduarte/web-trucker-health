@@ -21,6 +21,13 @@ Com base em pesquisas realizadas pelo time, percebemos que os caminhoneiros poss
 
 O app terá acesso a vários recursos de saude e bem estar no app, como acesso a campanhas de vacinação, Maio Amarelo, bem-estar e saúde e interligar esses dados de saúde ao departamento de recursos humanos da frota desse funcionário, auxiliando-os a trazer melhor bem-estar e uma vida melhor a esses que trabalham tão duro nas estradas.
 
+#### Techstack utilizada no frontend
+
+Para o desenvolvimento da landing page e iniciar a construção da plataforma empresarial, utilizamos a linguagem de programação JavaScript e a biblioteca/framework ReactJS. 
+Para padronizar a escrita do código utilizamos ferramentas como o  TypeScript, EsLint, Prettier e Editor Config. Para estilizar o CSS evitando conflitos de classes, utilizamos o Styled Components.
+Para gerenciar as dependências de desenvolvimento usamos o Yarn. Para a criação e validação utilizamos o Unform e Yup.
+Para otimizar o desenvolvimento das próximas funcionalidades e manter a consistência no layout, desenvolvemos um design system utilizando o Styled System, documentamos os componentes com o Storybook.
+
 #### Protótipo navegável
 
 [Clique aqui para ver o protótipo no figma](<AGUARDANDO>)
